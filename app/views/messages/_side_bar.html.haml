@@ -1,0 +1,18 @@
+.Chat-side
+  .Left-header
+    .Left-header__list
+      .Left-header__User-name
+        minami
+      .Left-header__Iconlist
+        = link_to '#', class: "Left-header__Iconlist__Pencil" do
+          = icon('fas', 'edit')
+          %span<>
+        = link_to '#', class: "Left-header__Iconlist__Gear" do
+          = icon('fas', 'cog')
+
+  .Groups
+    .group
+      .group__group-Name
+        techcamp
+      .group__group-Message
+        まだメッセージがありません

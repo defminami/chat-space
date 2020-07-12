@@ -1,0 +1,38 @@
+.Chat-main
+  .Right-header
+    .Right-header__list
+      .Right-header__list__Test
+        test
+      .Right-header__list__Member
+        Member : minami
+    .Right-header__list__Edit
+      = link_to '#', class: "Main-header__Right-header" do
+        Edit
+  .Messages
+    .Message
+      .Message__info
+        .Message__info__Talker
+          minami
+        .Message__info__Date
+          2020/07/11(sat) 10:00:00
+      .Message__text
+        こんにちは！
+    .Message
+      .Message__info
+        .Message__info__Talker
+          minami
+        .Message__info__Date
+          2020/07/11(sat) 10:05:30
+      .Message__text
+        雨〜
+        
+
+  .Form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('far', "image")
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn",value: "Send"}
+      

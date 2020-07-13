@@ -27,13 +27,14 @@
       color: #ffffff;
      }
     &__Iconlist {
-      &__Pencil {
-      margin-right: 5px;
-      color: #ffffff;
+      display: flex;
+      .Pencil{
+        color: white;
+        margin-right: 5px;
       }
-      &__Gear {
-      color: #ffffff;
-     }
+      .Gear{
+        color: white;
+      }
     }
   }
   .Groups {

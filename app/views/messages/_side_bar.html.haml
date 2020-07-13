@@ -2,14 +2,14 @@
   .Left-header
     .Left-header__list
       .Left-header__User-name
-        minami
-      .Left-header__Iconlist
-        = link_to '#', class: "Left-header__Iconlist__Pencil" do
-          = icon('fas', 'edit')
-          %span<>
-        = link_to '#', class: "Left-header__Iconlist__Gear" do
-          = icon('fas', 'cog')
-
+        = current_user.name
+      %ul.Left-header__Iconlist
+        %li.Left-header__Icon
+          = link_to '#', class:"Pencil" do
+            = icon('fas', 'edit')
+        %li.Left-header__Icon
+          = link_to edit_user_path(current_user), class:"Gear" do
+            = icon('fas', 'cog')
   .Groups
     .group
       .group__group-Name

@@ -28,12 +28,14 @@
      }
     &__Iconlist {
       display: flex;
-      .Pencil{
+      .Pencil {
         color: white;
         margin-right: 5px;
+        font-size: 16px;
       }
-      .Gear{
+      .Gear {
         color: white;
+        font-size: 16px;
       }
     }
   }
@@ -43,14 +45,15 @@
     font-weight: bold;
     background-color: #2f3e51;
     .Group {
-      color: #ffffff;
       &__Name {
         margin-bottom: 5px;
         font-size: 15px;
+        color: #ffffff;
       }
       &__Message {
         margin-bottom: 40px;
         font-size: 11px;
+        color: #ffffff;
       }
     }
   }
@@ -118,14 +121,13 @@
       }
     }
   }
-  .Form {
-    height: 90px;
-    padding: 20px 50px 20px 40px;
-    background-color: #d2d2d2;
-    
+  .Form {    
     form {
+      height: 90px;
+      padding: 20px 50px 20px 40px;
+      background-color: #d2d2d2;
       display: flex;
-      .input-box {
+      .Form__input-box {
         width: 100vw;
         display: flex;
         position: relative;
@@ -140,21 +142,21 @@
           right: 10px;
           font-size: 25px;
          
-          &__file {
+          .Hidden {
             display: none;
           }
         }
       }
-        .submit-btn {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        font-size: 16px;
-        color: white;
-        border-style: none;
-        }
+      .submit-btn {
+      width: 100px;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      font-size: 16px;
+      color: white;
+      border-style: none;
       }
     }
   }
+}

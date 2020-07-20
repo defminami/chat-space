@@ -100,6 +100,7 @@
     height: calc(100vh - 190px);
     padding: 35px 40px 0px;
     background-color: #fafafa;
+    overflow: scroll;
     .Message {
       margin-bottom: 46px;
       &__info {

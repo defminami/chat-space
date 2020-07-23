@@ -4,14 +4,14 @@
       .Right-header__list__Test
         = @group.name
       .Right-header__list__Member
-        = @group.show_last_message
+        - @group.users.each do |user|
+          = user.name
     .Right-header__list__Edit
       = link_to edit_group_path(@group), class: "Main-header__Right-header" do
         Edit
   .Messages
     = render @messages
         
-
   .Form
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Form__input-box
